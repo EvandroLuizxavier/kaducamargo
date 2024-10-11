@@ -1,0 +1,95 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+/* Estilo geral para o footer */
+footer {
+    width: 100%;
+    
+    background-color: #141414;
+    color: #fff;
+    padding: 40px 20px;
+    
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+/* Estilizando os ícones das redes sociais */
+.footer-social a {
+    margin: 0 10px ;
+    color: #bdbaba;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #fff; /* Cor ao passar o mouse (ajuste conforme o ícone) */
+}
+
+/* Estilizando o ícone de localização */
+.footer-city i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    
+    color: #bdbaba; /* Cor do ícone de localização */
+}
+
+.footer-city, .footer-about {
+    margin: 0px 0;
+   
+}
+
+.footer-about p{
+    font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-social a {
+        font-size: 20px;
+    }
+
+    .footer-city i {
+        
+        font-size: 18px; /* Ajuste para o tamanho menor da tela */
+    }
+
+    .footer-about{
+        margin-top: 2rem;
+    }
+
+    .footer-about p{
+        font-size: 10px;
+    }
+}
