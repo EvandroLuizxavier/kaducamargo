@@ -191,12 +191,12 @@ section#home{
 
 #home::before{
   content:'';
-  position: absolute;
+  position:absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 200px;
-  z-index: 999;
+  
   background: linear-gradient(to top, rgb(0, 0, 0) 30%, transparent);
 }
 
@@ -224,6 +224,10 @@ section#home{
       background-repeat: no-repeat;
       background-position: center;
       
+    }
+
+    #home::before{
+      display: none;
     }
 
     
@@ -265,6 +269,10 @@ section#home{
     .dropdown_menu{
       left: 2rem;
       width: unset;
+    }
+
+    #home::before{
+      display: none;
     }
 
     .navbar{
