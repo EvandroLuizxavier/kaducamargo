@@ -156,7 +156,7 @@
 </footer>
 
 
-
+<button id="backToTop" title="Voltar ao topo">⬆</button>
 
     <script>
   
@@ -173,6 +173,27 @@
               ? 'fa-solid fa-xmark'
               : 'fa-solid fa-bars' 
         }
+
+            // script.js btn topo
+document.addEventListener("DOMContentLoaded", () => {
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Mostra ou esconde o botão ao rolar
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) { // Mostra o botão ao rolar 200px
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    // Ao clicar no botão, rola para o topo
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+
     </script>
 </body>
 </html>
